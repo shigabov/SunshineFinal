@@ -35,6 +35,7 @@ import com.example.android.sunshine.app.gcm.RegistrationIntentService;
 import com.example.android.sunshine.app.sync.SunshineSyncAdapter;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity implements ForecastFragment.Callback {
 
@@ -107,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
                 startService(intent);
             }
         }
+
     }
 
     @Override
